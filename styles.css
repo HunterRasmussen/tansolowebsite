@@ -1,0 +1,80 @@
+
+@font-face {
+    font-family: "dirtyhousemedium";
+    src: url('./fonts/dirtyhouse-webfont.woff2') format('woff2'),
+         url('./fonts/dirtyhouse-webfont.woff') format('woff');
+  }
+
+.centered
+{
+    margin:auto;
+    width: 50%;
+    padding: 10px;
+}
+
+body {
+    background-image: url("./images/subtle_grunge_edited.png");
+  }
+
+h1 { font-family: "dirtyhousemedium", serif;
+    text-align: center;
+    font-size: 7vw;
+}
+
+#horizontalList {
+  clear:left;
+  float:left;
+  list-style:none;
+  margin:0;
+  padding:0;
+  position:relative;
+  left:50%;
+  text-align:center;
+  font-family: "dirtyhousemedium", serif;
+  font-size: 2.35vw;
+}
+
+#horizontalList li {
+  display:block;
+  float:left;
+  list-style:none;
+  margin:0;
+  padding:0;
+  position:relative;
+  right:50%;
+}
+
+
+#horizontalList li a {
+  display:block;
+  margin:0 0 0 1px;
+  padding:3px 10px;
+  background:#ddd;
+  color:#000;
+  text-decoration:none;
+  line-height:1.3em;
+}
+
+#horizontalList li a:hover {
+  background:#4a4a4a;
+  color:#fff;
+}
+
+#horizontalList a.active
+{   color:#fff;
+   background:#000;
+   font-weight:bold;
+}
+
+
+
+#menu-bar{
+  float:left;
+  width:100%;
+  background:#fff;
+  border-bottom:4px solid #000;
+  overflow:hidden;
+  position:relative;
+  margin-bottom: 2%;
+}
+
