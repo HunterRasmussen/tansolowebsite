@@ -21,7 +21,7 @@ h1 { font-family: "dirtyhousemedium", serif;
     font-size: 7vw;
 }
 
-#horizontalList {
+#horizontalList  {
   clear:left;
   float:left;
   list-style:none;
