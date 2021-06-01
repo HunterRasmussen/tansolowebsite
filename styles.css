@@ -89,9 +89,34 @@ option:checked {
   background-color: black;
 }
 
+/* #color option[value="olympicWhite"]{
+  background:#f5ebd5;
+  color: #000000;
+}
+
+#color option[value="desertSand"]{
+  background:#edc9af;
+}
+
+#color option[value="agedWhite"]{
+  background:#fbe68b;
+}
+
+#color option[value="seaFoamGreen"]{
+  background:#aacab3;
+}
+
+#color option[value="sonicBlue"]{
+  background:#d9e5e3;
+}
+
+#color option[value="shellPink"]{
+  /*background: rgba(0, 47, 255, 1.0);*/
+  background:#dcbab5;
+} */
+
 option {
-  background-color: green;
-  color: purple;
+  color: black;
 }
 
 .select-selected {

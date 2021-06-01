@@ -4,6 +4,8 @@
     <title>Tan SolO Guitars</title>
     <link rel="icon" href="./images/Icons8-Ios7-Music-Guitar.ico">
     <link rel="stylesheet" href="./styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./imagebuilder.js"></script>
 </head>
 <body>
     <div>
@@ -38,7 +40,7 @@
             <form>
                 <div class="custom-select" style="width:200px;">
                     <label for="color">Color:</label><br>
-                    <select id="color" name="color">
+                    <select id="guitarColor" name="color">
                         <option value="olympicWhite">Olympic White</option>
                         <option value="desertSand">Desert Sand</option>
                         <option value="agedWhite">Aged White</option>
@@ -71,6 +73,7 @@
                 </select>
                 </div>
             </form>
+            <img id = "imageGuitarColor" src = "./images/guitars/desertsand.png">
         </div>
     </div>
 </body>
