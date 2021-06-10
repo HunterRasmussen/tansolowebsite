@@ -21,6 +21,18 @@ h1 { font-family: "dirtyhousemedium", serif;
     font-size: 7vw;
 }
 
+.column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 #horizontalList  {
   clear:left;
   float:left;
@@ -111,7 +123,7 @@ option:checked {
 }
 
 #color option[value="shellPink"]{
-  /*background: rgba(0, 47, 255, 1.0);*/
+  background: rgba(0, 47, 255, 1.0);
   background:#dcbab5;
 } */
 
@@ -171,4 +183,12 @@ option {
 
 .select-items div:hover, .same-as-selected {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+#imageGuitarColor {
+  /*position: absolute;
+  top: 60%;
+  left: 50%;*/
+  max-width: 25vw;
+  height: auto;
 }
