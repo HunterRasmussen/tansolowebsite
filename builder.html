@@ -4,6 +4,7 @@
     <title>Tan SolO Guitars</title>
     <link rel="icon" href="./images/Icons8-Ios7-Music-Guitar.ico">
     <link rel="stylesheet" href="./styles.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="./imagebuilder.js"></script>
 </head>
@@ -40,7 +41,8 @@
             </p>
             <div class="row">
                 <div class="column">
-                    <form>
+                    <form id="builderForm">
+                        <input type="hidden" name="contact_number">
                         <div class="custom-select" style="width:200px;">
                             <label for="color">Color:</label><br>
                             <select id="guitarColor" name="color">
@@ -72,15 +74,28 @@
                             <label for="pickup">Pickup:</label><br>
                             <select id="pickup" name="pickup">
                                 <option value="seyDuncBroadcaster">Seymour Duncan Broadcaster</option>
-                                <option value="seyDuncJerryDonahue">- Seymour Duncan Jerry Donahue (+$30)</option>
-                                <option value="dimarzio">Dimarzio Twang King (+30)</option>
+                                <option value="seyDuncJerryDonahue">Seymour Duncan Jerry Donahue (+$30)</option>
                                 <option value="other">Other (Price TBD)</option>
                             </select>
                         </div>
+                        <br>
+                        <label>Email Address</label>
+                        <br>
+                        <input type="email" name="user_email">
+                        <br><br>
+                        <label>Message</label>
+                        <br>
+                        <textarea name="message"></textarea>
+                        <br><br><br>
+                        <input type="submit" value="Submit">
                     </form>
                 </div>
                 <div class="column">
-                <img id = "imageGuitarColor" src = "./images/guitars/body_olympicWhite.png">
+                    <img id = "imageGuitarColor" src = "./images/guitars/body_olympicWhite.png">
+                    <img id = "imagePickguardColor" src = "./images/guitars/pickguard_black.png">
+                    <img id = "guitarTuner" src = "./images/guitars/tuners.png">
+                    <img id = "imageGuitarNeck" src = "./images/guitars/neck_maple.png">
+                    <img id = "imageGuitarPickup" src = "./images/guitars/pickup_seymour_duncan_broadcaster.png">
                 </div>
             </div>
         </div>

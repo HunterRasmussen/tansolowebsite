@@ -24,6 +24,7 @@ h1 { font-family: "dirtyhousemedium", serif;
 .column {
   float: left;
   width: 50%;
+  position: relative;
 }
 
 /* Clear floats after the columns */
@@ -90,15 +91,15 @@ h1 { font-family: "dirtyhousemedium", serif;
   margin-bottom: 2%;
 }
 
-.custom-select {
-  position: relative;
-  font-family: "dirtyhousemedium", serif;
-  font-size: 2vw;
-  width: 9vw;
-}
+
 
 option:checked {
   background-color: black;
+}
+
+label {
+  font-family: "dirtyhousemedium", serif;
+  font-size: 2vw;
 }
 
 /* #color option[value="olympicWhite"]{
@@ -189,6 +190,36 @@ option {
   /*position: absolute;
   top: 60%;
   left: 50%;*/
+  position: absolute;
+  z-index: 1;
+  max-width: 25vw;
+  height: auto;
+}
+
+#imagePickguardColor {
+  position: absolute;
+  z-index: 2;
+  max-width: 25vw;
+  height: auto;
+}
+
+#imageGuitarNeck {
+  position: absolute;
+  z-index: 3;
+  max-width: 25vw;
+  height: auto;
+}
+
+#imageGuitarPickup {
+  position: absolute;
+  z-index: 3;
+  max-width: 25vw;
+  height: auto;
+}
+
+#guitarTuner {
+  position: absolute;
+  z-index: 3;
   max-width: 25vw;
   height: auto;
 }
